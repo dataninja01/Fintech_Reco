@@ -8,4 +8,4 @@ RUN pip3 install -r requirements.txt
 ENTRYPOINT [ "python" ] 
 CMD ["sentiment_analysis.py", "server.py", "request.py"]
 
-EXPOSE 5000
+EXPOSE 8080
