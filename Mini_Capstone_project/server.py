@@ -6,11 +6,11 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # load model w metadata
-model = joblib.load("models\pipe_clf_checkpoint.joblib")
+model = joblib.load("models/pipe_clf_checkpoint.joblib")
 model_clf = model['pipeline']
 
 # route post requests
-@app.route("/api", methods = ['POST'])
+@app.route("/api", methods = ["POST"])
 def predict_sentiment():
     # pass requests to model
     data = request.get_json(force=True)
@@ -30,4 +30,4 @@ def predict_sentiment():
     return jsonify(response)
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(port=8080, debug=True)

@@ -7,7 +7,7 @@ git clone https://github.com/dataninja01/Fintech_Reco.git && \
 cd Fintech_Reco && \
 cd Mini_Capstone_project && \
 pip3 install -r requirements.txt
-RUN python3 /opt/Mini_Capstone_project/sentiment_analysis.py
-RUN python3 /opt/Mini_Capstone_project/request.py
-RUN python3 /opt/Mini_Capstone_project/server.py
+ENTRYPOINT [ "python" ] 
+CMD ["sentiment_analysis.py", "server.py", "request.py"]
+
 EXPOSE 5000
