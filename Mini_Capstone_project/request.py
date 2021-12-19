@@ -6,7 +6,7 @@ with open("api_test_data.json") as f:
     my_requests = json.load(f)
 
 # Flask app api
-url = "http://localhost:8080/api"
+url = "http://localhost:5000/api"
 r = requests.post(url, json= my_requests)
 
 # print response
