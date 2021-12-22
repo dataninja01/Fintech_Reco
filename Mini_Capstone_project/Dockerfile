@@ -6,6 +6,6 @@ COPY . /Mini_Capstone_project
 WORKDIR /Mini_Capstone_project
 RUN pip3 install -r requirements.txt
 ENTRYPOINT [ "python" ] 
-CMD ["sentiment_analysis.py", "server.py", "request.py"]
+CMD ["server.py"]
 
-EXPOSE 8080
+EXPOSE 8000
