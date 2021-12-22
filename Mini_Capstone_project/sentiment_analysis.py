@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1j29qTTah2JvZiP7D5FsdOU2T1VEcIRLs
 """
 
-import nltk
-nltk.download('vader_lexicon')
 import pandas as pd
 import numpy as np
 
