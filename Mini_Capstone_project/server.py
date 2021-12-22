@@ -23,5 +23,5 @@ def predict():
     output = ''.join(predictions).capitalize()
     return render_template('form.html', text=text, final = output)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5002, debug=True, threaded=True)
+if __name__ == '__main__':
+  if "serve" in sys.argv: app.run(host='0.0.0.0', port=8000, debug=True)
