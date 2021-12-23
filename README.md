@@ -13,4 +13,9 @@ The model behind the scenes:
     -Uses the training data to build the ML model
     -Preprocesses data using TfidfVectorizer and builds classification model using LinearSVC
  
-This application has been Dockerized :-)  
+This application has been Dockerized :-) 
+The steps to run the container are:
+Clone this repo
+Change directory into repo
+Docker build -t minicap .
+docker run -p 8000:5000 minicap
