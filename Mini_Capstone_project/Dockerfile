@@ -1,10 +1,8 @@
-FROM python:3.8
-RUN apt-get update && \
-apt-get install -y python3-pip python3-dev git && \
-apt-get -y upgrade
-COPY . /Mini_Capstone_project
+FROM python:3.8-slim-buster
 WORKDIR /Mini_Capstone_project
+COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
+COPY . .
 ENTRYPOINT [ "python" ] 
 CMD ["server.py"]
 

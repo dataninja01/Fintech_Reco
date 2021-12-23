@@ -1,7 +1,7 @@
 import numpy as np
 import joblib
 import sys
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template
 
 # instantiate Flask app
 app = Flask(__name__, template_folder='templates')
@@ -25,4 +25,4 @@ def predict():
     return render_template('form.html', text=text, final = output)
 
 if __name__ == '__main__':
-  if "serve" in sys.argv: app.run(host='0.0.0.0', port=8000, debug=True)
+  app.run(host='0.0.0.0', debug=True)
