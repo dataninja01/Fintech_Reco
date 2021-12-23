@@ -1,7 +1,7 @@
 # Fintech_Reco
 ## Mini captstone mid-term project of Mani Nagaraj & Sperks
 
-### Details of deployment:
+### Process Details:
     -Front-end using Flask API with html forms and css styling
     -Submit text through website for sentiment analysis 
     -ML Model accepts text from HTML form
