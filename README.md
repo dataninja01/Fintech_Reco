@@ -13,7 +13,8 @@
     -Downloads IMDB movie data set from Hugging Face
     -Uses the training data to build the ML model
     -Preprocesses data using TfidfVectorizer and builds classification model using LinearSVC
-    ![image](https://user-images.githubusercontent.com/46502113/147180782-2ad51bea-7e32-45d7-a8e1-b2c2f7ace6b6.png)
+    
+   ![image](https://user-images.githubusercontent.com/46502113/147180782-2ad51bea-7e32-45d7-a8e1-b2c2f7ace6b6.png)
 
  
 ### This application has been Dockerized :-) 
